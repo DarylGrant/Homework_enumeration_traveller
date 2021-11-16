@@ -42,12 +42,11 @@ describe('Traveller', () => {
         expect(traveller.getJourneyEndLocations()).toEqual(ends);
       });
 
-      xtest('should be able to get journeys by transport', () => {
+      test('should be able to get journeys by transport', () => {
         const transportType = [
           journey1,
           journey2,
-          journey3,
-          journey4,
+       
         ];
         expect(traveller.getJourneyByTransport('train')).toEqual(transportType);
       }); 
